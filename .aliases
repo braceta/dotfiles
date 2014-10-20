@@ -142,3 +142,19 @@ alias reload="exec $SHELL -l"
 
 # Faster npm for Europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
+
+# TV alias
+alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
+
+alias rtpn="rtmpdump -v -r rtmp://ec21.rtp.pt/livetv -W http://www.rtp.pt/play/player.swf -p http://www.rtp.pt/services/rtpplay/pub/config_page/rtp.pt/play/direto/tv/rtpn --playpath 2ch64h264 | vlc - 2>/dev/null"
+
+alias rtpn2="rtmpdump -v -r rtmp://ec24.rtp.pt/livetv -W http://www.rtp.pt/play/player.swf -p http://www.rtp.pt/services/rtpplay/pub/config_page/rtp.pt/play/direto/tv/rtpn --playpath 2ch64h264 | vlc - 2>/dev/null"
+
+# rtmp://ec26.rtp.pt/livetv
+alias rtp="rtmpdump -v -r rtmp://ec24.rtp.pt/livetv -W http://www.rtp.pt/play/player.swf -p http://www.rtp.pt/services/rtpplay/pub/config_page/rtp.pt/play/direto/tv/rtp1 --playpath 2ch5h264 | vlc - 2>/dev/null"
+
+alias rtpi="rtmpdump -v -r rtmp://ec25.rtp.pt/livetv -W http://www.rtp.pt/play/player.swf -p http://www.rtp.pt/services/rtpplay/pub/config_page/rtp.pt/play/direto/tv/rtp1 --playpath 2ch120h264 | vlc - 2>/dev/null"
+
+alias tvi="vlc http://video-live.iol.pt:1935/live_tvi/smil:LIVETVI/playlist.m3u8"
+
+export GOPATH=/Users/Braceta/.golang/
